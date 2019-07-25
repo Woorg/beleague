@@ -1,0 +1,30 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+
+.page {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	color: #FFF;
+	font-display: swap;
+	font-family: $o;
+	font-size: 18px;
+	font-weight: 400;
+    background-color: #18171f;
+    &__w {
+    	overflow: hidden;
+    }
+    &__inner {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
+    }
+}
+
+.page__wrapper {
+    min-height: 100%;
+}
+
