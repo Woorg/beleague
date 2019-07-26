@@ -1,0 +1,50 @@
+mixin tournaments(data)
+    .tournaments
+        .tournaments__container
+            h2.tournaments__title.title.title_h2 Types of tournaments
+
+            .tournaments__list
+                article.tournaments__tournament.tournament
+                    .tournament__inner(style="background-image: url('%=static=%images/content/tournament-daily.png');")
+                        a.tournament__link(href="#")
+                        .tournament__entry
+                            span.tournament__title daily
+                            span.tournament__text The easiest daily tournaments. Sign up and participate
+                        
+
+
+                article.tournaments__tournament.tournament
+
+                    .tournament__inner(style="background-image: url('%=static=%images/content/tournament-weekly.png');")
+                        a.tournament__link(href="#")
+                        .tournament__entry
+                            span.tournament__title weekly
+                            span.tournament__text Tournaments with higher level and bigger prizes
+                        
+
+
+                article.tournaments__tournament.tournament
+                    .tournament__inner(style="background-image: url('%=static=%images/content/tournament-monthly.png');")
+                        a.tournament__link(href="#")
+                        .tournament__entry
+                            span.tournament__title monthly
+                            span.tournament__text Only for weekly tournament winners
+
+                    
+
+                article.tournaments__tournament.tournament.tournament_off
+                    .tournament__inner(style="background-image: url('%=static=%images/content/tournament-closed.png');")
+                        a.tournament__link(href="#")
+                        .tournament__entry
+                            span.tournament__title closed
+                            span.tournament__text For Battle Pass holders and High Level Gamers
+                        
+                
+
+                article.tournaments__tournament.tournament.tournament_off
+                    .tournament__inner(style="background-image: url('%=static=%images/content/tournament-league.png');")
+                        a.tournament__link(href="#")
+                        .tournament__entry
+                            span.tournament__title league
+                            span.tournament__text Seasonal league with big prizes for winners
+

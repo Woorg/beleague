@@ -1,2 +1,42 @@
 mixin footer(data)
     .footer
+        .footer__container
+            a.footer__logo.logo(href="#") Beleague
+            .footer__text Твой путь в киберспорт
+            nav.footer__nav.nav
+                ul.nav__list
+                    li.nav__item
+                        a.nav__link(href="#link 1") Турниры
+                    li.nav__item
+                        a.nav__link(href="#link 2") Личный кабинет
+                    li.nav__item
+                        a.nav__link(href="#link 3") Контакты
+                    li.nav__item
+                        a.nav__link(href="#link 4") Политика конфиденциальности
+                    li.nav__item
+                        a.nav__link(href="#link 5") Лига
+                    li.nav__item
+                        a.nav__link(href="#link 6") Battle pass
+
+
+            .footer__social.social
+                a.social__link.social__link_vk(href="#link") 
+                    != pugHelpers.Icon.call(locals, { iconName: 'vk', className: 'social__icon' })
+
+                a.social__link.social__link_twitter(href="#link")
+                    != pugHelpers.Icon.call(locals, { iconName: 'twitter', className: 'social__icon' })
+
+                a.social__link.social__link_facebook(href="#link") 
+                    != pugHelpers.Icon.call(locals, { iconName: 'facebook', className: 'social__icon' })
+
+                a.social__link.social__link_instagram(href="#link") 
+                    != pugHelpers.Icon.call(locals, { iconName: 'instagram', className: 'social__icon' })
+
+                a.social__link.social__link_twitch(href="#link") 
+                    != pugHelpers.Icon.call(locals, { iconName: 'twitch', className: 'social__icon' })
+
+                a.social__link.social__link_discord(href="#link") 
+                    != pugHelpers.Icon.call(locals, { iconName: 'discord', className: 'social__icon' })
+
+
+        .footer__video.video

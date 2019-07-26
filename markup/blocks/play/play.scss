@@ -1,0 +1,104 @@
+.play {
+    
+    &__container {
+        padding-top: 200px;
+        padding-bottom: 133px;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 162px;
+    }
+
+    &__list {
+        @include resetlist();
+        
+    }
+
+    &__item {
+        // position: relative;
+        margin-bottom: 30px;
+
+        &_money {
+
+            .play__icon {
+                width: 86px;
+                height: 62px;
+                @include bg($money-icon);
+                
+                &:after {
+                    top: -47px;
+                    left: -56px;
+                    width: 233px;
+                    height: 182px;
+                    background-image: url('../images/general/play-item-bg-1.png');
+                }
+
+            }   
+
+        }
+
+        &_points {
+
+            .play__icon {
+                width: 57px;
+                height: 68px;
+                @include bg($points-icon);
+                
+                &:after {
+                    top: -98px;
+                    left: -82px;
+                    width: 224px;
+                    height: 293px;
+                    background-image: url('../images/general/play-item-bg-2.png');
+                }
+
+            }   
+            
+        }
+
+        &_xp {
+
+            .play__icon {
+                width: 72px;
+                height: 67px;
+                @include bg($xp-icon);
+                
+                &:after {
+                    top: -45px;
+                    left: -71px;
+                    width: 246px;
+                    height: 202px;
+                    background-image: url('../images/general/play-item-bg-3.png');
+                }
+
+            }   
+            
+        }
+
+    }
+
+    &__icon {
+        position: relative;
+        margin: auto;
+        margin-bottom: 30px;
+        
+        &:after {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            content: '';
+
+        }
+
+    }
+
+    &__item-title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+
+
+}

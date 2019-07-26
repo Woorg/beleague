@@ -1,0 +1,32 @@
+.features {
+    
+    &:after {
+        
+        position: absolute;
+        background: url('../images/general/features-bg.png') 0 0 no-repeat;
+
+    }
+
+    &__container {
+        @extend .container;
+        
+        padding-bottom: 10px;
+
+    }
+
+    &__list {
+        
+
+    }
+
+
+    &__feature {
+        
+
+    }
+
+
+
+
+
+}

@@ -1,0 +1,89 @@
+.social
+{
+    display: flex;
+
+    justify-content: flex-start;
+    &__link
+    {
+        position: relative;
+
+        width: 44px;
+        height: 44px;
+        
+        display: block;
+        
+        // opacity: .1;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,.1);
+
+        &_vk
+        {
+            .social__icon
+            {
+                width: 20px;
+                height: 12px;
+
+            }
+        }
+
+        &_twitter
+        {
+            .social__icon
+            {
+                width: 18px;
+                height: 14px;
+               
+            }
+        }
+
+        &_facebook
+        {
+            .social__icon
+            {
+                width: 10px;
+                height: 20px;
+            }
+        }
+
+        &_instagram
+        {
+            .social__icon
+            {
+                width: 19px;
+                height: 19px;
+            }
+        }
+
+        &_twitch
+        {
+            .social__icon
+            {
+                width: 18px;
+                height: 19px;
+            }
+        }
+
+        &_discord
+        {
+            .social__icon
+            {
+                width: 24px;
+                height: 17px;
+            }
+        }
+    }
+
+
+
+
+    &__icon
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        fill: #fff;
+    }
+}

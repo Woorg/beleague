@@ -1,0 +1,110 @@
+.feature {
+    position: relative;
+    padding-top: 148px;
+    padding-bottom: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+
+    &:after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        content: "";
+        width: 1720px;
+        height: 2px;
+        background-image: url('../images/general//features-border.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        transform: translateX(-50%);
+    }
+
+
+    &_odd {
+        
+    }
+
+    &_even {
+
+        
+
+    }
+
+    &__image {
+
+        flex-grow: 1;
+        
+    }
+
+    &__entry {
+        max-width: 656px;
+        
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        @include resetlist();
+        margin-bottom: 50px;
+    }
+
+    &__list-item {
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            margin-right: 5px;
+            
+        }
+
+        &_first {
+
+            &:after {
+                @include bg($list-item-1);
+                
+            }
+
+        }
+
+        &_second {
+
+            &:after {
+                @include bg($list-item-1);
+
+            }
+            
+        }
+
+        &_third {
+
+            &:after {
+                @include bg($list-item-1);
+
+            }
+            
+        }
+    }
+
+
+    &__button {
+        padding-top: 25px;
+        padding-right: 65px;
+        padding-bottom: 18px;
+        padding-left: 65px;
+        
+    }
+
+
+
+}
