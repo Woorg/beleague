@@ -24,6 +24,17 @@ a {
 }
 
 
+.lazy-bg {
+    display: none;
+    
+    &.visible {
+
+        display: block;
+    
+    }
+
+}
+
 .button {
     display: inline-block;
     vertical-align: baseline;

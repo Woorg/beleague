@@ -172,7 +172,7 @@
         height: 110px;
         background-size: contain;
         background-repeat: no-repeat;
-
+        
         @include rmin($sm) {
             left: 0;
             width: 1220px;
