@@ -1,13 +1,23 @@
 .play {
     
     &__container {
-        padding-top: 200px;
-        padding-bottom: 133px;
+        padding-top: (236px / 2);
+        padding-bottom: (111px / 2);
         text-align: center;
+        
+        @include rmin($sm) {
+            padding-top: 236px;
+            padding-bottom: 111px;
+        }
     }
 
     &__title {
-        margin-bottom: 162px;
+        margin-bottom: (165px / 2);
+        
+        @include rmin($sm) {
+            margin-bottom: 165px;
+           
+        }
     }
 
     &__list {
@@ -16,10 +26,28 @@
     }
 
     &__item {
-        // position: relative;
+        position: relative;
         margin-bottom: 30px;
+        flex-basis: 100%;
+        
+        @include rmin($sm) {
+            flex-basis: auto;
+        }
 
         &_money {
+
+
+            .play__w {
+                
+                margin-left: 0;
+                
+                @include rmin($sm) {
+                    margin-left: 100px;
+                    
+                }
+
+            }
+
 
             .play__icon {
                 width: 86px;
@@ -59,6 +87,17 @@
 
         &_xp {
 
+            .play__w {
+                
+                margin-right: 0;
+
+                @include rmin($sm) {
+                    margin-right: 160px;
+                    
+                }
+
+            }
+
             .play__icon {
                 width: 72px;
                 height: 67px;
@@ -81,7 +120,7 @@
     &__icon {
         position: relative;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 18px;
         
         &:after {
             position: absolute;
@@ -97,6 +136,7 @@
     &__item-title {
         font-size: 30px;
         font-weight: 700;
+        @include css-lock(18, 30, 320, 1400, font-size);
     }
 
 

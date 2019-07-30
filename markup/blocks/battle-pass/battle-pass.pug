@@ -2,11 +2,11 @@ mixin battle-pass(data)
     .battle-pass&attributes(attributes)
 
         .battle-pass__container
-            h2.battle-pass__title Battle Pass (coming soon)
+            h2.battle-pass__title.title.title_h2 Battle Pass (coming soon)
             .battle-pass__shape
-            .battle-pass__w(style="background-image: url(%=static=%images/general/battle-pass-bg.png);")
+            .battle-pass__w
                 ul.battle-pass__list
-                    li.battle-pass__item Доступ к закрытым VIP турнирам
+                    li.battle-pass__item Доступ к закрытым <br/> VIP турнирам
                     li.battle-pass__item Бонус XP
                     li.battle-pass__item Бонус поинты
 
